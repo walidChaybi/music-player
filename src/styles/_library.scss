@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap");
+body {
+  font-family: Montserrat;
+}
+h3,
+h4 {
+  font-weight: 400;
+}
+.library {
+  h2 {
+    padding: 1rem;
+    text-align: center;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25rem;
+  height: 100%;
+  background-color: rgb(242, 242, 242);
+  box-shadow: 2px 2px 50px rgba(128, 128, 128, 0.632);
+  overflow: scroll;
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  border-top-right-radius: 0.5rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.hide {
+  transform: translateX(-100%);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.library-song {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.songs {
+  font-family: Montserrat;
+  cursor: pointer;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  img {
+    width: 35%;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  h4 {
+    font-size: 0.85rem;
+  }
+  &:hover {
+    background-color: rgb(232, 214, 236);
+  }
+}
